@@ -36,7 +36,7 @@ class Profile:
 		except OSError:
 			print "gksu/sudo/iwconfig not found"
 
-def __make_dict(self, list):
+def __make_dict(list):
 	"""Convert a list of (name, value) tuples into a dictionary."""
 	ret = {}
 	for i in list:
@@ -44,7 +44,7 @@ def __make_dict(self, list):
 
 	return ret
 
-def get_profiles(self):
+def get_profiles():
 	"""Read the configuration file.
 	Return a list of profiles"""
 	c = ConfigParser.ConfigParser()
