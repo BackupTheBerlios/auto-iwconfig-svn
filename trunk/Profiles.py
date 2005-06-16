@@ -36,6 +36,9 @@ class Profile:
 		except OSError:
 			print "gksu/sudo/iwconfig not found"
 
+		# remove commandfile
+		os.remove(cmdf.name)
+
 def __make_dict(list):
 	"""Convert a list of (name, value) tuples into a dictionary."""
 	ret = {}
