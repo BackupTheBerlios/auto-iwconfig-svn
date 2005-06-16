@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: UTF8 -*-
 
 from distutils.core import setup
 
@@ -8,7 +9,7 @@ setup(name='auto-iwconfig',
 		author='Henrik Ronellenfitsch',
 		author_email='searinox@web.de',
 		url='http://auto-iwconfig.berlios.de',
-		packages=['auto-iwconfig'],
-		package_dir={'auto-iwconfig': 'auto-iwconfig'},
-		scripts=['auto-iwconfig/auto-iwconfig']
+		packages=['autoiwconfig'],
+		package_dir={'autoiwconfig': 'autoiwconfig'},
+		scripts=['bin/auto-iwconfig']
 		)

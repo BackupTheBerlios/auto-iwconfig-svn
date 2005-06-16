@@ -15,7 +15,7 @@ def print_help():
 Usage: auto-iwconfig [profile-name]
 """
 
-if __name__ == '__main__':
+def main():
 	print_header()
 	
 	profiles = Profiles.get_profiles()
@@ -34,3 +34,6 @@ if __name__ == '__main__':
 
 		for prf in profiles:
 			print prf.name
+
+if __name__ == '__main__':
+	main()
