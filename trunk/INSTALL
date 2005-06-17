@@ -1,0 +1,10 @@
+Required packages:
+- Python 2.4
+- sudo
+- wireless-tools (iwconfig)
+
+To install auto-iwconfig got to the directory (as you probably already did) and type:
+
+python setup.py install
+
+That's it ;)

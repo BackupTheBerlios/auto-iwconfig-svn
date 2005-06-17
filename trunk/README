@@ -1,0 +1,22 @@
+AUTO-IWCONFIG
+
+auto-iwconfig is a tool that allows the user to define so called profiles 
+for iwconfig that can be changed.
+
+To change to your current 'home' profile (if you had set up one) you could simply type
+
+auto-iwconfig home
+
+and SSID, encryption key, etc.. will be adjusted automatically.
+
+auto-iwconfig is controlled with the file
+
+~/.auto-iwconfig.conf
+
+which holds the profiles configuration. The aforementioned 'home' profile could read:
+
+[home]
+interface=wlan0
+essid=homenetwork
+
+Note that the 'interface' option is mandatory, as one profile can only be assigned to one wlan interface.
