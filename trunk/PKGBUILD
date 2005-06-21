@@ -1,0 +1,13 @@
+# Contributor: Henrik Ronellenfitsch <henrik at searinox dot de>
+pkgname=auto-iwconfig
+pkgver=0.1
+pkgrel=1
+pkgdesc="Allows to create and easily switch between wireless lan profiles"
+depends=('python' 'sudo' 'wireless-tools')
+source=(http://download.berlios.de/auto-iwconfig/$pkgname-$pkgver.tar.bz2)
+url="http://auto-iwconfig.berlios.de/"
+
+build() {
+  cd $startdir/src/$pkgname-$pkgver
+  python setup.py install --prefix=$startdir/pkg/usr
+}
